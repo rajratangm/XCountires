@@ -52,7 +52,7 @@ const GridCountry = () => {
             )
         ):(
             <div>
-                Loading ...
+                
             </div>
         )
        

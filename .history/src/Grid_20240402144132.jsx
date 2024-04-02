@@ -37,25 +37,19 @@ const GridCountry = () => {
     // </div>
     
     <div className='container'>{
-        country.length?(
-            country.map(
-                xcount=> (
-                    // <Box sx={{ flexGrow: 1 }}>
-                    // <Grid container spacing={2} >
-                      <div key ={xcount.cca3}  >
-                        <Card name={xcount.name.common} image ={xcount.flags.png}/>
-                      </div>
-                //     </Grid>
-                //   </Box>
-                    
-                )
+        country.length?
+        country.map(
+            xcount=> (
+                // <Box sx={{ flexGrow: 1 }}>
+                // <Grid container spacing={2} >
+                  <div key ={xcount.cca3}  >
+                    <Card name={xcount.name.common} image ={xcount.flags.png}/>
+                  </div>
+            //     </Grid>
+            //   </Box>
+                
             )
-        ):(
-            <div>
-                Loading ...
-            </div>
         )
-       
 
         }</div>
   )
